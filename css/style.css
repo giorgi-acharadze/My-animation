@@ -1,0 +1,256 @@
+/* Just my first steps :)))  */
+
+body {
+  background-color: rgb(187, 179, 179);
+}
+.section {
+  margin-top: 60px;
+}
+.container {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  animation-name: cont-a;
+  animation-duration: 2s;
+  animation-delay: 0.9s;
+  animation-iteration-count:infinite;
+  animation-direction: reverse;
+}
+ .candle1,.candle2 {
+  display: inline-block;
+ }
+ .candle1 {
+  width: 100px;
+  height: 130px;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 220px;
+  top: 220px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  animation-name: candle1-a;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ .top1 {
+  width: 8px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 2px;
+  position: absolute;
+  left: 266px;
+  top: 191px;
+ }
+ .fire {
+  width: 22px;
+  height: 28px;
+  background-color: orange;
+  position: absolute;
+  top: 176px;
+  left: 259px;
+  border-radius: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 18px;
+  animation-name: fire-a;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 0.9s;
+ }
+ .top2 {
+  width: 8px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 2px;
+  position: absolute;
+  left: 394px;
+  top: 121px;
+  animation-name: top2-a;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ .eye1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 162px;
+  left: 372px; 
+  animation-name: eye1-a;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-direction: reverse ;
+  animation-iteration-count: infinite;
+}
+.eye2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 162px;
+  left: 412px;
+  animation-name: eye2-a;
+  animation-duration: 2s;
+  /* animation-delay: 2s; */
+  animation-direction: reverse ;
+  animation-iteration-count: infinite; 
+}
+.eye3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 240px;
+  left: 240px;
+  animation-name: eye3-a;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+}
+.eye4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 240px;
+  left: 280px; 
+  animation-name: eye4-a;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+}
+.mouth {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  left: 370px;
+  animation-name: mouth-a;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  /* animation-delay: 1.1s; */
+}
+ .candle2 {
+  width: 100px;
+  height: 200px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  bottom: 300px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  animation-name: candle2-a;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ .table {
+  width: 500px;
+  height: 20px;
+  background-color: brown;
+  position: absolute;
+  bottom: 131px;
+  border-radius: 20px;
+  margin-left: 100px;
+ }
+ .name {
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  animation-name: my-name;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ /*  Animation starts here! */
+ @keyframes fire-a {
+  0%   {transform: rotate(0deg); background-color: orange;}
+  25%  {transform: rotate(15deg); background-color: yellow;}
+  50%  {transform: rotate(40deg); background-color: orange;} 
+  100% {transform: rotate3d(-50deg); width: 0px; height: 0px;background-color: black;}
+ }
+ @keyframes candle2-a {
+  0%   {width: 100px; top: 150px;}
+  25%  {width: 106px; top: 140px;}
+  50%  {width: 106px; top: 138px;}
+  75%  {width: 106px; top: 136px;}
+  100% {width: 106px;top:  150px;}
+ }
+ @keyframes top2-a {
+  0%  {top: 121px;}
+  25% {top: 111px;}
+  50% {top: 109px;}
+  75% {top: 107px;}
+  100% {top: 121px;}
+ }
+ @keyframes eye1-a {
+  0%   {left: 372px; }
+  25%  {left: 362px; }
+  50%  {left: 362px; }
+  75%  {left: 362px; }
+  100% {left: 362px; }
+ }
+ @keyframes eye2-a {
+  0%   {left: 412px;}
+  25%  {left: 402px;}
+  50%  {left: 402px;}
+  75%  {left: 402px;}
+  100% {left: 402px;}
+ }
+ @keyframes mouth-a {
+  0% {background-color: whitesmoke;}
+  25%  {background-color: black;}
+  50%  {width: 24px; height: 24px; background-color: black;}
+  75%  {background-color: whitesmoke;}
+  100% {background-color: whitesmoke;}
+ }
+ @keyframes cont-a {
+  0% {background-color:  rgb(31, 31, 31);}
+   25% {background-color: rgb(31, 31, 31);}
+   50% {background-color: white;}
+   100% {background-color: white;}
+ }
+ @keyframes eye3-a {
+   0% {background-color: black;}
+   25% {background-color: black;}
+   50% {background-color: black; width:8px; height: 8px; border-radius: 2px;}
+   100% {background-color: rgb(158, 154, 149);}
+ }
+ @keyframes eye4-a {
+   0% {background-color: black;}
+   25% {background-color: black;}
+   50% {background-color: black; width:8px; height: 8px; border-radius: 2px;}
+   100% {background-color: rgb(158, 154, 149);}
+ }
+ @keyframes candle1-a {
+  0%   {background-color: whitesmoke;}
+  25%  {background-color: whitesmoke;}
+  50%  {background-color: whitesmoke;}
+  100% {background-color: rgb(158, 154, 149);}
+}
+@keyframes my-name {
+  from {color: black;}
+  to   {color: white;}
+}
+
+/* My first steps */
+
+
+
